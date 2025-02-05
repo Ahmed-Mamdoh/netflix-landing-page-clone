@@ -1,0 +1,191 @@
+@media (max-width: 75em) {
+  /*1200 px*/
+  .container {
+    max-width: 90rem;
+  }
+
+  .hero-inner {
+    padding: 0 20%;
+  }
+
+  .join-grid {
+    gap: 3.2rem;
+  }
+
+  .join-card {
+    max-width: 35rem;
+    height: 35rem;
+  }
+
+  .header img {
+    width: 20%;
+  }
+}
+
+@media (max-width: 62em) {
+  /*992 px*/
+  .container {
+    max-width: 75rem;
+  }
+}
+
+@media (max-width: 48em) {
+  /*768 px*/
+
+  html {
+    font-size: 50%;
+  }
+
+  .container {
+    max-width: 70rem;
+  }
+
+  .header img {
+    width: 25%;
+  }
+
+  .hero-inner {
+    padding: 0 10%;
+  }
+
+  .join-grid {
+    gap: 2.4rem;
+  }
+
+  .join-card {
+    max-width: 30rem;
+    height: 30rem;
+  }
+}
+
+@media (max-width: 36em) {
+  /*676 px*/
+  html {
+    font-size: 43.75%; /*7 px*/
+  }
+
+  .container {
+    max-width: 60rem;
+  }
+
+  .card-img img {
+    width: 22rem;
+  }
+  .show-card h3 {
+    font-size: 10rem;
+  }
+
+  .join-grid {
+    gap: 2.4rem;
+  }
+
+  .join-card h3 {
+    font-size: 2rem;
+  }
+
+  .join-card p {
+    font-size: 1.4rem;
+  }
+
+  .join-card {
+    max-width: 25rem;
+    height: 25rem;
+    gap: 1rem;
+  }
+
+  .footer-grid {
+    padding-right: 10%;
+  }
+
+  .lang {
+    padding: 0.6rem 0.4rem;
+  }
+}
+
+@media (max-width: 27em) {
+  /*432 px*/
+
+  .container {
+    max-width: 50rem;
+  }
+
+  .hero-form {
+    flex-wrap: wrap;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+    margin-top: 4.8rem;
+  }
+
+  .hero-price {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  .hero-watch {
+    font-size: 1.9rem;
+    margin-top: 4.2rem;
+  }
+
+  .hero-form input {
+    width: 100%;
+    margin-top: 1.2rem;
+    font-size: 2.4rem;
+  }
+
+  .btn--subscribe {
+    font-size: 2rem;
+  }
+
+  .btn--subscribe img {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+  .header img {
+    width: 33%;
+  }
+
+  .hero {
+    min-height: 70vh;
+  }
+
+  .btn {
+    font-size: 2.4rem;
+  }
+
+  .btn--subscribe {
+    margin-top: 2.4rem;
+    font-size: 3.2rem;
+  }
+
+  .lang {
+    padding: 1.2rem 1.2rem;
+  }
+
+  .join-grid {
+    gap: 1r.6em;
+  }
+
+  .join-card {
+    max-width: 23rem;
+    height: 23rem;
+    gap: 1rem;
+  }
+
+  .footer-inner {
+    gap: 3.2rem;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4.8rem;
+    column-gap: 2rem;
+    padding-right: 0;
+  }
+
+  .footer-grid a {
+    font-size: 1.8rem;
+  }
+}

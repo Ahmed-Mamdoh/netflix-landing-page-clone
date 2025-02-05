@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character encoding and viewport -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Netflix</title>
+  </head>
+  <body>
+    <!-- Header section with logo and navigation -->
+    <header class="header">
+      <div class="header-inner container">
+        <img src="img/netflix-logo-1.svg" alt="Netflix Logo" />
+        <div class="header-content">
+          <select name="lang" id="lang" class="lang">
+            <option value="en">English</option>
+            <option value="ar">العربية</option>
+          </select>
+          <button class="btn btn--sign-in">Sign In</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero section with main call-to-action -->
+      <section class="hero">
+        <div class="hero-inner">
+          <h1 class="hero-title">Unlimited movies, TV shows, and more.</h1>
+          <p class="hero-price">Starts at EGP 100. Cancel anytime.</p>
+          <p class="hero-watch">
+            Ready to watch? Enter your email to create or restart your
+            membership.
+          </p>
+          <form action="#" class="hero-form">
+            <input type="email" placeholder="Email address" required />
+            <button class="btn btn--subscribe">
+              Get Started <img src="img/Rarrow.svg" alt="arrow" />
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Trending shows section -->
+      <section class="shows">
+        <div class="shows-inner container">
+          <h2 class="second-title">Trending Now</h2>
+          <div class="shows-grid">
+            <!-- Show cards 1-10 -->
+            <div class="show-card">
+              <div class="card-img"><img src="img/1.webp" alt="" /></div>
+              <h3>1</h3>
+            </div>
+            <div class="show-card">
+              <div class="card-img"><img src="img/2.webp" alt="" /></div>
+              <h3>2</h3>
+            </div>
+            <div class="show-card">
+              <div class="card-img"><img src="img/3.webp" alt="" /></div>
+              <h3>3</h3>
+            </div>
+            <div class="show-card">
+              <div class="card-img"><img src="img/4.webp" alt="" /></div>
+              <h3>4</h3>
+            </div>
+            <div class="show-card">
+              <div class="card-img"><img src="img/5.webp" alt="" /></div>
+              <h3>5</h3>
+            </div>
+            <div class="show-card">
+              <div class="card-img"><img src="img/6.webp" alt="" /></div>
+              <h3>6</h3>
+            </div>
+            <div class="show-card">
+              <div class="card-img"><img src="img/7.webp" alt="" /></div>
+              <h3>7</h3>
+            </div>
+            <div class="show-card">
+              <div class="card-img"><img src="img/8.webp" alt="" /></div>
+              <h3>8</h3>
+            </div>
+            <div class="show-card">
+              <div class="card-img"><img src="img/9.webp" alt="" /></div>
+              <h3>9</h3>
+            </div>
+            <div class="show-card">
+              <div class="card-img"><img src="img/10.webp" alt="" /></div>
+              <h3>10</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features section highlighting reasons to join -->
+      <section class="join">
+        <div class="join-inner container">
+          <h2 class="second-title">More Reasons to Join</h2>
+          <div class="join-grid">
+            <!-- TV viewing feature -->
+            <div class="join-card">
+              <h3>Enjoy on your TV</h3>
+              <p>
+                Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV,
+                Blu-ray players, and more.
+              </p>
+              <img src="img/tv.svg" alt="" />
+            </div>
+            <!-- Offline downloads feature -->
+            <div class="join-card">
+              <h3>Download your shows to watch offline</h3>
+              <p>
+                Save your favorites easily and always have something to watch.
+              </p>
+              <img src="img/download.svg" alt="" />
+            </div>
+            <!-- Multi-device streaming feature -->
+            <div class="join-card">
+              <h3>Watch everywhere</h3>
+              <p>
+                Stream unlimited movies and TV shows on your phone, tablet,
+                laptop, and TV.
+              </p>
+              <img src="img/everywhere.svg" alt="" />
+            </div>
+            <!-- Kids profiles feature -->
+            <div class="join-card">
+              <h3>Create profiles for kids</h3>
+              <p>
+                Send kids on adventures with their favorite characters in a
+                space made just for them — free with your membership.
+              </p>
+              <img src="img/profiles.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ section -->
+      <section class="faq">
+        <div class="faq-inner container">
+          <h2 class="second-title">Frequently Asked Questions</h2>
+          <div class="faq-grid">
+            <!-- What is Netflix FAQ -->
+            <div class="faq-card">
+              <div class="faq-head">
+                <h3>What is Netflix</h3>
+                <img src="img/plus.svg" alt="" />
+              </div>
+              <div class="open">
+                <p>
+                  Netflix is a streaming service that offers a wide variety of
+                  award-winning TV shows, movies, anime, documentaries, and more
+                  on thousands of internet-connected devices.
+                  <br /><br />
+                  You can watch as much as you want, whenever you want without a
+                  single commercial – all for one low monthly price. There's
+                  always something new to discover and new TV shows and movies
+                  are added every week!
+                </p>
+              </div>
+            </div>
+            <!-- Cost FAQ -->
+            <div class="faq-card">
+              <div class="faq-head">
+                <h3>how much does Netflix cost</h3>
+                <img src="img/plus.svg" alt="" />
+              </div>
+              <div>
+                <p>
+                  Watch Netflix on your smartphone, tablet, Smart TV, laptop, or
+                  streaming device, all for one fixed monthly fee. Plans range
+                  from EGP 100 to EGP 240 a month. No extra costs, no contracts.
+                </p>
+              </div>
+            </div>
+            <!-- Where to watch FAQ -->
+            <div class="faq-card">
+              <div class="faq-head">
+                <h3>where can i watch</h3>
+                <img src="img/plus.svg" alt="" />
+              </div>
+              <div>
+                <p>
+                  Watch anywhere, anytime. Sign in with your Netflix account to
+                  watch instantly on the web at netflix.com from your personal
+                  computer or on any internet-connected device that offers the
+                  Netflix app, including smart TVs, smartphones, tablets,
+                  streaming media players and game consoles.
+                  <br />
+                  You can also download your favorite shows with the iOS or
+                  Android app. Use downloads to watch while you're on the go and
+                  without an internet connection. Take Netflix with you
+                  anywhere.
+                </p>
+              </div>
+            </div>
+            <!-- Cancellation FAQ -->
+            <div class="faq-card">
+              <div class="faq-head">
+                <h3>how do i cancel</h3>
+                <img src="img/plus.svg" alt="" />
+              </div>
+              <div>
+                <p>
+                  Netflix is flexible. There are no pesky contracts and no
+                  commitments. You can easily cancel your account online in two
+                  clicks. There are no cancellation fees – start or stop your
+                  account anytime.
+                </p>
+              </div>
+            </div>
+            <!-- Content FAQ -->
+            <div class="faq-card">
+              <div class="faq-head">
+                <h3>what can i watch on netflix</h3>
+                <img src="img/plus.svg" alt="" />
+              </div>
+              <div>
+                <p>
+                  Netflix has an extensive library of feature films,
+                  documentaries, TV shows, anime, award-winning Netflix
+                  originals, and more. Watch as much as you want, anytime you
+                  want.
+                </p>
+              </div>
+            </div>
+            <!-- Kids content FAQ -->
+            <div class="faq-card">
+              <div class="faq-head">
+                <h3>is netflix good for kids</h3>
+                <img src="img/plus.svg" alt="" />
+              </div>
+              <div>
+                <p>
+                  The Netflix Kids experience is included in your membership to
+                  give parents control while kids enjoy family-friendly TV shows
+                  and movies in their own space.
+                  <br />
+                  Kids profiles come with PIN-protected parental controls that
+                  let you restrict the maturity rating of content kids can watch
+                  and block specific titles you don't want kids to see.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- FAQ section CTA -->
+          <div class="faq-cta">
+            <p class="hero-watch">
+              Ready to watch? Enter your email to create or restart your
+              membership.
+            </p>
+            <form action="#" class="hero-form">
+              <input type="email" placeholder="Email address" required />
+              <button class="btn btn--subscribe">
+                Get Started <img src="img/Rarrow.svg" alt="arrow" />
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="footer">
+      <div class="footer-inner container">
+        <a href="#">Questions? Contact us.</a>
+        <!-- Footer links grid -->
+        <div class="footer-grid">
+          <div class="col-1">
+            <a href="#">FAQ</a>
+            <a href="#">Investor Relations</a>
+            <a href="#">Privacy</a>
+            <a href="#">Speed Test</a>
+          </div>
+          <div class="col-2">
+            <a href="#"> Help Center</a>
+            <a href="#"> Jobs</a>
+            <a href="#">Cookie Preferences</a>
+            <a href="#">Legal Notices</a>
+          </div>
+          <div class="col-3">
+            <a href="#"> Account</a>
+            <a href="#"> Ways to Watch</a>
+            <a href="#"> Corporate Information</a>
+            <a href="#"> Only on Netflix</a>
+          </div>
+          <div class="col-3">
+            <a href="#"> Media Center</a>
+            <a href="#"> Terms of Use</a>
+            <a href="#"> Contact Us</a>
+          </div>
+        </div>
+        <!-- Language selector -->
+        <select name="lang" class="lang">
+          <option value="en">English</option>
+          <option value="ar">العربية</option>
+        </select>
+
+        <p>Netflix Egypt</p>
+      </div>
+    </footer>
+  </body>
+</html>
