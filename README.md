@@ -12,9 +12,10 @@ A simple Netflix landing page clone built using HTML and CSS for practice.
 - CSS  
 
 ## Live Demo  
-[Netflix Landing Page Demo](video.mp4)
+https://github.com/user-attachments/assets/70a1f75a-7cd3-4182-a169-8858b83c169e
+
 
 ## Try It Your Self
-https://ahmed-mamdoh.github.io/netflix-landing-page-clone/
+### [Netflix](https://netflx-mamdoh.netlify.app/)
 
-###Don't Forget To Try It On a Phone
+### Don't Forget To Try It On a Phone 👀
