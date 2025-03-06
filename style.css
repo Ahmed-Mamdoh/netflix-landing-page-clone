@@ -16,6 +16,10 @@ body {
   color: #fff;
 }
 
+img {
+  user-select: none;
+}
+
 /* Layout */
 .container {
   max-width: 120rem;
@@ -172,10 +176,33 @@ body {
 .shows-grid {
   display: flex;
   flex-wrap: nowrap;
-  gap: 3.2rem;
+  gap: 4rem;
   overflow-x: scroll;
   scrollbar-width: none;
-  padding: 3rem;
+  scroll-behavior: smooth;
+  padding: 3rem 2rem;
+}
+
+.shows-grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+}
+.slider-btn--right,
+.slider-btn--left {
+  background-color: #1a1a1a;
+  padding: 50px 0px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.arrow {
+  width: 24px;
+  height: 24px;
+  color: white;
+  cursor: pointer;
 }
 
 /* Show cards */
@@ -193,15 +220,19 @@ body {
   overflow: hidden;
 }
 
+.card-img img {
+  max-width: 18rem;
+}
+
 .show-card h3 {
   position: absolute;
   bottom: 5px;
   left: -20px;
-  font-size: 12rem;
+  font-size: 11rem;
   font-weight: 700;
   color: transparent;
   -webkit-text-fill-color: black;
-  -webkit-text-stroke: 2px#fff;
+  -webkit-text-stroke: 1px#fff;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -255,6 +286,7 @@ body {
   flex-direction: column;
   gap: 2rem;
   margin-top: 6.4rem;
+  user-select: none;
 }
 
 .faq-grid {
@@ -285,21 +317,24 @@ body {
 .faq-card img {
   filter: invert(100%);
   height: 100%;
+  transition: all 0.3s ease;
 }
 
-.faq-card div:nth-child(2) {
+.faq-answer {
   display: none;
+  transition: all 0.3s ease;
 }
 
 .open {
   display: block !important;
+  height: 100%;
   padding: 2rem 2rem;
   font-size: 2rem;
   font-weight: 400;
   line-height: 1.8;
   background-color: #2d2d2d;
   border-top: 2px solid black;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 .faq-cta {

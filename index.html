@@ -4,11 +4,11 @@
     <!-- Meta tags for character encoding and viewport -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="queries.css">
-    
+    <link rel="stylesheet" href="queries.css" />
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,6 +17,7 @@
       rel="stylesheet"
     />
     <title>Netflix</title>
+    <script defer src="script.js"></script>
   </head>
   <body>
     <!-- Header section with logo and navigation -->
@@ -44,7 +45,13 @@
             membership.
           </p>
           <form action="#" class="hero-form">
-            <input type="email" placeholder="Email address" required />
+            <input
+              name="email"
+              type="email"
+              placeholder="Email address"
+              required
+              autocomplete="email"
+            />
             <button class="btn btn--subscribe">
               Get Started <img src="img/Rarrow.svg" alt="arrow" />
             </button>
@@ -56,48 +63,57 @@
       <section class="shows">
         <div class="shows-inner container">
           <h2 class="second-title">Trending Now</h2>
-          <div class="shows-grid">
-            <!-- Show cards 1-10 -->
-            <div class="show-card">
-              <div class="card-img"><img src="img/1.webp" alt="" /></div>
-              <h3>1</h3>
+          <div class="shows-grid-container">
+            <button class="slider-btn--left">
+              <ion-icon name="chevron-back-outline" class="arrow"></ion-icon>
+            </button>
+
+            <div class="shows-grid">
+              <!-- Show cards 1-10 -->
+              <div class="show-card">
+                <div class="card-img"><img src="img/1.webp" alt="" /></div>
+                <h3>1</h3>
+              </div>
+              <div class="show-card">
+                <div class="card-img"><img src="img/2.webp" alt="" /></div>
+                <h3>2</h3>
+              </div>
+              <div class="show-card">
+                <div class="card-img"><img src="img/3.webp" alt="" /></div>
+                <h3>3</h3>
+              </div>
+              <div class="show-card">
+                <div class="card-img"><img src="img/4.webp" alt="" /></div>
+                <h3>4</h3>
+              </div>
+              <div class="show-card">
+                <div class="card-img"><img src="img/5.webp" alt="" /></div>
+                <h3>5</h3>
+              </div>
+              <div class="show-card">
+                <div class="card-img"><img src="img/6.webp" alt="" /></div>
+                <h3>6</h3>
+              </div>
+              <div class="show-card">
+                <div class="card-img"><img src="img/7.webp" alt="" /></div>
+                <h3>7</h3>
+              </div>
+              <div class="show-card">
+                <div class="card-img"><img src="img/8.webp" alt="" /></div>
+                <h3>8</h3>
+              </div>
+              <div class="show-card">
+                <div class="card-img"><img src="img/9.webp" alt="" /></div>
+                <h3>9</h3>
+              </div>
+              <div class="show-card">
+                <div class="card-img"><img src="img/10.webp" alt="" /></div>
+                <h3>10</h3>
+              </div>
             </div>
-            <div class="show-card">
-              <div class="card-img"><img src="img/2.webp" alt="" /></div>
-              <h3>2</h3>
-            </div>
-            <div class="show-card">
-              <div class="card-img"><img src="img/3.webp" alt="" /></div>
-              <h3>3</h3>
-            </div>
-            <div class="show-card">
-              <div class="card-img"><img src="img/4.webp" alt="" /></div>
-              <h3>4</h3>
-            </div>
-            <div class="show-card">
-              <div class="card-img"><img src="img/5.webp" alt="" /></div>
-              <h3>5</h3>
-            </div>
-            <div class="show-card">
-              <div class="card-img"><img src="img/6.webp" alt="" /></div>
-              <h3>6</h3>
-            </div>
-            <div class="show-card">
-              <div class="card-img"><img src="img/7.webp" alt="" /></div>
-              <h3>7</h3>
-            </div>
-            <div class="show-card">
-              <div class="card-img"><img src="img/8.webp" alt="" /></div>
-              <h3>8</h3>
-            </div>
-            <div class="show-card">
-              <div class="card-img"><img src="img/9.webp" alt="" /></div>
-              <h3>9</h3>
-            </div>
-            <div class="show-card">
-              <div class="card-img"><img src="img/10.webp" alt="" /></div>
-              <h3>10</h3>
-            </div>
+            <button class="slider-btn--right">
+              <ion-icon name="chevron-forward-outline" class="arrow"></ion-icon>
+            </button>
           </div>
         </div>
       </section>
@@ -111,7 +127,7 @@
             <div class="join-card">
               <h3>Enjoy on your TV</h3>
               <p>
-                Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV,
+                Watch on Smart TVs, Playstation, Xbox, Chrome Cast, Apple TV,
                 Blu-ray players, and more.
               </p>
               <img src="img/tv.svg" alt="" />
@@ -157,7 +173,7 @@
                 <h3>What is Netflix</h3>
                 <img src="img/plus.svg" alt="" />
               </div>
-              <div class="open">
+              <div class="faq-answer">
                 <p>
                   Netflix is a streaming service that offers a wide variety of
                   award-winning TV shows, movies, anime, documentaries, and more
@@ -172,11 +188,11 @@
             </div>
             <!-- Cost FAQ -->
             <div class="faq-card">
-              <div class="faq-head">
+              <div class="faq-head" data-ques="2">
                 <h3>how much does Netflix cost</h3>
                 <img src="img/plus.svg" alt="" />
               </div>
-              <div>
+              <div class="faq-answer">
                 <p>
                   Watch Netflix on your smartphone, tablet, Smart TV, laptop, or
                   streaming device, all for one fixed monthly fee. Plans range
@@ -186,11 +202,11 @@
             </div>
             <!-- Where to watch FAQ -->
             <div class="faq-card">
-              <div class="faq-head">
+              <div class="faq-head" data-ques="3">
                 <h3>where can i watch</h3>
                 <img src="img/plus.svg" alt="" />
               </div>
-              <div>
+              <div class="faq-answer">
                 <p>
                   Watch anywhere, anytime. Sign in with your Netflix account to
                   watch instantly on the web at netflix.com from your personal
@@ -207,11 +223,11 @@
             </div>
             <!-- Cancellation FAQ -->
             <div class="faq-card">
-              <div class="faq-head">
+              <div class="faq-head" data-ques="4">
                 <h3>how do i cancel</h3>
                 <img src="img/plus.svg" alt="" />
               </div>
-              <div>
+              <div class="faq-answer">
                 <p>
                   Netflix is flexible. There are no pesky contracts and no
                   commitments. You can easily cancel your account online in two
@@ -222,11 +238,11 @@
             </div>
             <!-- Content FAQ -->
             <div class="faq-card">
-              <div class="faq-head">
+              <div class="faq-head" data-ques="5">
                 <h3>what can i watch on netflix</h3>
                 <img src="img/plus.svg" alt="" />
               </div>
-              <div>
+              <div class="faq-answer">
                 <p>
                   Netflix has an extensive library of feature films,
                   documentaries, TV shows, anime, award-winning Netflix
@@ -237,11 +253,11 @@
             </div>
             <!-- Kids content FAQ -->
             <div class="faq-card">
-              <div class="faq-head">
+              <div class="faq-head" data-ques="6">
                 <h3>is netflix good for kids</h3>
                 <img src="img/plus.svg" alt="" />
               </div>
-              <div>
+              <div class="faq-answer">
                 <p>
                   The Netflix Kids experience is included in your membership to
                   give parents control while kids enjoy family-friendly TV shows
@@ -261,7 +277,13 @@
               membership.
             </p>
             <form action="#" class="hero-form">
-              <input type="email" placeholder="Email address" required />
+              <input
+                name="email"
+                type="email"
+                placeholder="Email address"
+                required
+                autocomplete="email"
+              />
               <button class="btn btn--subscribe">
                 Get Started <img src="img/Rarrow.svg" alt="arrow" />
               </button>
@@ -311,4 +333,12 @@
       </div>
     </footer>
   </body>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
 </html>
