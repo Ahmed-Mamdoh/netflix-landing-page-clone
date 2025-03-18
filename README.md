@@ -9,7 +9,8 @@ A simple Netflix landing page clone built using HTML and CSS for practice.
 
 ## Technologies Used  
 - HTML  
-- CSS  
+- CSS
+- JavaScript
 
 ## Live Demo  
 https://github.com/user-attachments/assets/70a1f75a-7cd3-4182-a169-8858b83c169e
