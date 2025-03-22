@@ -25,7 +25,6 @@ faqHeads.forEach((head) => {
     const questionId = question.dataset.ques;
     const questionImg = question.querySelector("img");
     const ans = document.querySelector(`#ans--${questionId}`);
-    console.log(questionImg);
     questionImg.style.transform = "rotate(45deg)";
     ans.classList.contains("open")
       ? (questionImg.style.transform = "rotate(0deg)")
